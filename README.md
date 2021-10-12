@@ -14,10 +14,10 @@
 <br />
 <div align="center">
   <a href="http://www.joshposh.xyz">
-    <img src="imgs/gayscale.png" alt="Logo" width="80" height="80">
+    <img src="imgs/pfpa.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Simple minimalistic portfolio</h3>
 
   <p align="center">
     An awesome portfolio for your projects!
@@ -28,7 +28,9 @@
     <a href="https://github.com/joshdadev/joshposh.xyz">The repo</a>
     ·
     <a href="https://discordapp.com/users/773483375751069696">Contact me</a>
-   
+    ·
+    <a href="https://discord.gg/nyMhh5vDTy">My discord server</a>
+    ·
   </p>
 </div>
 
