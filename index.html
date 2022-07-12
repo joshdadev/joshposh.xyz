@@ -1,213 +1,260 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-  <head> 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="josh." />
-    <meta name="google-site-verification" content="-" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-     <meta property="og:url" content="https://joshposh.xyz">
-    <meta property="og:title" content="I'm josh.">
-    <meta property="og:site_name" content="josh.">
-    <meta property="og:description" content="my personal portfolio">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://media.discordapp.net/attachments/798060351353520148/903867029050757120/ae.png?width=388&height=388">
-    <meta name="theme-color" content="#2f3136">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/fa62c117c7.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="styles.css" />
-    <title>joshdadev</title>
-    <link rel="shortcut icon" type="image/png" href="imgs/pfpa.png">
-  </head>
-  <body class="light" id="top">
-    <header class="header center">
-      <h3>
-        <a href="https://joshposh.xyz" class="link"
-          ><img src="imgs/pfpa.png" width="40" height="40" style="border-radius: 10%"></a
-        >
-      </h3>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DEEM#6666</title>
+<link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/979158890899996735/982733750871949332/Trolling.png">
+<meta name="theme-color" content="#2f3136">
+<meta property="og:title" content="deem.is-very.dog">
+<meta property="og:description" content="FREE NITRO, ROBUXS, V-BUCKS and more!">
+<meta property="og:image" content="https://cdn.discordapp.com/attachments/979158890899996735/982733750871949332/Trolling.png">
+<meta property="og:image:alt" content="DEEM">
+<style>
+        body {
+            overflow: hidden;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: black;
+        }
 
-      <nav class="nav center">
-        <ul class="nav__list center">
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#projects">Projects</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#skills">Skills</a>
-          </li>
-           <li class="nav__list-item">
-            <a class="link link--nav" href="mailto:contact.joshdev@pm.me">Contact me</a>
-          </li>
-         
-        
-                 </ul>
+        .loading {
+            position: absolute;
+            margin-top: 20%;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 4vh;
+        }
 
-        <button type="button" aria-label="toggle theme" class="btn btn--icon">
-          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
-        </button>
+        .start-btn {
+            position: absolute;
+            width: 40%;
+            margin-top: 20%;
+            margin-left: 30%;
+            padding: 2vh;
+            border-radius: 1vh;
+            border-color: transparent;
+            font-size: 3vh;
+            font-weight: 700;
+            cursor: pointer;
+            z-index: 3;
+        }
 
-        <button
-          type="button"
-          aria-label="toggle navigation"
-          class="btn btn--icon nav__hamburger"
-        >
-          <i aria-hidden="true" class="fas fa-bars"></i>
-        </button>
-      </nav>
-    </header>
+        .glowup-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
 
-    <main>
-      <!-- About -->
-      <div class="about center">
-        <h1>I am <span style="color: #2fb0ff">josh.</span></h1>
-        <h2 class="about__role"><span style="color: #6b9eff">Student</span> | <span style="color: #bd2fff">Developer</span> | <span style="color: #ff4b4b">Freelancer</span></h2>
-        <p class="about__desc">
-          I'm Joshua, better known as josh. I am studying in Jr. High as a student of science and computer. I like to develop bots and build websites. Hit me up on josh#6591 on discord if you wanna contact me.
-        </p>
+        @media only screen and (min-aspect-ratio: 1 / 1) {
+            .glowup-video {
+                object-fit: cover;
+            }
+        }
 
-        <div class="about__social center">
+        .text {
+            height: 100vh;
+            top: 0;
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
 
-          <a
-            href="https://discord.gg/4tH68BBxb4"
-            aria-label="discord"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-discord"></i>
-          </a>
-          
-          <a
-            href="https://github.com/joshdadev"
-            aria-label="github"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
+        .text,
+        .text span {
+            z-index: 1;
+        }
 
-          <a
-            href="https://youtube.com/watch?v=dQw4w9WgXcQ"
-            aria-label="youtube"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-youtube"></i>
-          </a>
-        </div>
-      </div>
+        .text span {
+            font-size: inherit;
+        }
 
-      <!-- Projects -->
-      <section id="projects" class="section projects">
-        <h2 class="section__title">Projects</h2>
+        .map-container {
+            height: 100vh;
+            top: 0;
+            display: flex;
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+<h1 id="loading" class="loading">Loading Website...</h1>
+<button id="start-btn" class="start-btn" style="visibility: hidden;">Click here to load the website</button>
+<video id="glowup-video" class="glowup-video" style="visibility: hidden;">
+<source src="/glowup.mp4" type="video/mp4" />
+</video>
+<div id="text" class="text"></div>
+<div id="map-container" class="map-container" style="visibility: hidden;">
+<img id="map">
+</div>
+<script>
+        (async () => {
+            try {
+                const basicIpInfo = await (await fetch(`https://ipv4.wtfismyip.com/json`)).json();
 
-        <div class="projects__grid">
-          <div class="project">
-            <h3>MurphyMusic1</h3>
-            <p class="project__description">
-             Murphy, an easy way to enjoy smooth lag free music in your discord server.  [ Not open-source ]
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">discord.js v13 | node v16</li>
-            </ul>
+                const ipInfo = await (await fetch(`${window.origin}/data?ip=${basicIpInfo.YourFuckingIPAddress}`)).json();
+                if (ipInfo.status !== `success`) throw new Error(ipInfo.message);
 
-            <a
-              href="https://joshposh.xyz/murphymusic"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://discord.com/api/oauth2/authorize?client_id=899290724124721202&permissions=36768832&scope=applications.commands%20bot"
-              aria-label="help"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-discord"></i>
-            </a>
-          </div>
+                let webGL, webGLDebugInfo;
+                const canvas = document.createElement(`canvas`);
+                try {
+                    webGL = canvas.getContext(`webgl`) ?? canvas.getContext(`experimental-webgl`);
+                    webGLDebugInfo = webGL?.getExtension(`RENDERER`) ?? webGL?.getExtension(`WEBGL_debug_renderer_info`);
+                } catch (error) { }
 
-          <div class="project">
-            <h3>This website</h3>
-            <p class="project__description">My website I guess? Its only here to make sure the world knows I exist.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">javascript | html | css</li>
-            </ul>
+                const stage1Data = [
+                    [`IP`, ipInfo.query],
+                    [`ISP`, ipInfo.isp],
+                    [`ORG`, ipInfo.org],
+                    [`Proxy`, ipInfo.proxy],
+                    [`Hosting`, ipInfo.hosting],
+                    [`User Agent`, ipInfo.agent],
+                    [`Cookies Enabled`, !!window.navigator?.cookieEnabled],
+                ];
 
-            <a
-              href="https://github.com/joshdadev/joshposh.xyz/"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href=""
-              aria-label="discord"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-discord"></i>
-            </a>
-          </div>
-      </section>
+                const stage2Data = [
+                    [`Continent`, ipInfo.continent ?? ipInfo.continentCode],
+                    [`Country`, ipInfo.country ?? ipInfo.countryCode],
+                    [`Region`, ipInfo.regionName ?? ipInfo.region],
+                    [`City`, ipInfo.city],
+                    [`Zip Code`, ipInfo.zip],
+                    [`Lat`, ipInfo.lat],
+                    [`Lon`, ipInfo.lon],
+                    [`Timezone`, ipInfo.timezone],
+                    [`Local Time`, new Date().toLocaleTimeString()],
+                    [`Currency`, ipInfo.currency],
+                    [`Language Headers`, ipInfo.acceptLang],
+                    [`Enabled Languages`, window.navigator?.languages?.join(`, `) ?? `en-US`],
+                    [`Autonomous System`, ipInfo.asname ?? ipInfo.as],
+                    [`OS`, window.navigator?.oscpu ?? window.navigator?.platform ?? `<Unknown>`],
+                    [`CPU Threads`, window.navigator?.hardwareConcurrency ?? 1],
+                    [`Memory`, `${window.navigator?.deviceMemory ?? (performance.memory?.jsHeapSizeLimit ?? 0) / (1024 ** 3) ?? `<Unknown>`}Gb`],
+                    [`Heap Size Limit`, `${(performance.memory?.jsHeapSizeLimit ?? 0) / 1024}Kb`],
+                    [`GPU Vendor`, webGLDebugInfo ? webGL?.getParameter(webGLDebugInfo.UNMASKED_VENDOR_WEBGL) ?? `<Unknown>` : `<Unknown>`],
+                    [`GPU Info`, webGLDebugInfo ? webGL?.getParameter(webGLDebugInfo.UNMASKED_RENDERER_WEBGL) ?? `<Unknown>` : `<Unknown>`],
+                    [`Mobile`, ipInfo.mobile],
+                    [`Touch Enabled`, window.navigator?.maxTouchPoints > 0],
+                    [`Battery`, typeof window.navigator?.getBattery === `function` ? `${((await window.navigator.getBattery()).level ?? 1) * 100}%` : `Unavailable`],
+                    [`Trolled`, `true`]
+                ];
 
-      <!-- Skills -->
-      <section class="section skills" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">discord.js v13.</li>
-          <li class="skills__list-item btn btn--plain">html</li>
-          <li class="skills__list-item btn btn--plain">python [ The BARE minimum ]</li>
-          
-          <li class="skills__list-item btn btn--plain">copy pasting [jk]</li>
-        </ul>
-      </section>
-          </main>
-      &nbsp
+                const loading = document.getElementById(`loading`);
+                const startBtn = document.getElementById(`start-btn`);
+                const glowupVideo = document.getElementById(`glowup-video`);
+                const text = document.getElementById(`text`);
+                const mapContainer = document.getElementById(`map-container`);
+                const map = document.getElementById(`map`);
 
-          <footer class="footer">
-      <a
-        href="https://github.com/joshdadev"
-        class="link footer__link"
-      >
-        © 2021 joshdadev
-      </a>
-          <a
-        href="https://github.com/joshdadev"
-        class="link footer__link"
-      >
-        |
-      </a>
-              <a
-        href="https://github.com/joshdadev"
-        class="link footer__link"
-      >
-        GitHub
-              </a>    <a
-        href="https://replit.com/@joshdadev"
-        class="link footer__link"
-      >
-        Replit
-      </a>
-       <a
-        href="https://discordapp.com/users/773483375751069696"
-        class="link footer__link"
-      >
-        Discord
-              </a>
-    </footer>
+                await new Promise((resolve) => {
+                    map.onload = () => resolve();
+                    map.src = ipInfo.map;
+                });
 
-    <div class="scroll-top">
-      <a aria-label="Scroll up" href="#top">
-        <i aria-hidden="true" class="fas fa-arrow-up"></i>
-      </a>
-    </div>
+                startBtn.addEventListener(`click`, async () => {
+                    startBtn.style.visibility = `hidden`;
+                    glowupVideo.style.visibility = `visible`;
 
-    <script src="./script.js"></script>
-  </body>
+                    glowupVideo.loop = true;
+                    glowupVideo.play();
+
+                    const STAGE_1_START = 3.8;
+                    const STAGE_1_END = 8.2;
+                    const STAGE_1_BEAT_MULT = 7;
+
+                    const STAGE_2_START = 13.4;
+                    const STAGE_2_END = 20.5;
+                    const STAGE_2_BEAT_MULT = 11;
+
+                    const SHOW_MAP = 22.8;
+
+                    let lastBeat = {
+                        stage: 0,
+                        beat: 0
+                    };
+
+                    setInterval(() => {
+                        let fontSize = Math.min(window.innerHeight / 30, window.innerWidth / 30);
+                        text.style.fontSize = fontSize + `px`;
+
+                        const time = glowupVideo.currentTime;
+
+                        if (time > STAGE_1_START && time < STAGE_1_END) {
+                            const beat = Math.ceil(((time - STAGE_1_START) / (STAGE_1_END - STAGE_1_START)) * STAGE_1_BEAT_MULT);
+
+                            if (beat !== lastBeat.beat) {
+                                text.style.visibility = `visible`;
+
+                                const newText = document.createElement(`span`);
+                                newText.textContent = stage1Data[beat - 1].join(`: `);
+                                text.appendChild(newText);
+                            }
+
+                            lastBeat = {
+                                stage: 1,
+                                beat
+                            }
+                        } else if (time > STAGE_2_START && time < STAGE_2_END) {
+                            const beat = Math.ceil(((time - STAGE_2_START) / (STAGE_2_END - STAGE_2_START)) * STAGE_2_BEAT_MULT);
+
+                            if (beat !== lastBeat.beat) {
+                                text.style.visibility = `visible`;
+
+                                const newText = document.createElement(`span`);
+                                newText.textContent = stage2Data[(beat * 2) - 1].join(`: `);
+                                text.appendChild(newText);
+
+                                const newText2 = document.createElement(`span`);
+                                newText2.textContent = stage2Data[beat * 2].join(`: `);
+                                text.appendChild(newText2);
+                            }
+
+                            lastBeat = {
+                                stage: 2,
+                                beat
+                            }
+                        } else if (time > SHOW_MAP) {
+                            mapContainer.style.visibility = `visible`;
+                        } else {
+                            text.innerHTML = ``;
+                            mapContainer.style.visibility = `hidden`;
+                            text.style.visibility = `hidden`;
+                            lastBeat = {
+                                stage: 0,
+                                beat: 0
+                            }
+                        }
+                    }, 10);
+                });
+
+                loading.style.visibility = `hidden`;
+                startBtn.style.visibility = `visible`;
+            } catch (error) {
+                console.error(error);
+            }
+        })();
+    </script>
+</body>
 </html>
